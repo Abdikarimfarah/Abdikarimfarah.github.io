@@ -5,6 +5,7 @@ header{
     flex-direction: row;
     justify-content: space-around;
     font-size: larger;
+    gap: 560px;
 }
 body{
     background-color: darkgrey;
@@ -24,9 +25,11 @@ h4{
     
 }
 footer{
-    
+    display: block;
+    grid-template-columns: 100%;
+    grid-column: ;
 }
 nav{
-    grid-column: 1/2;
+    grid
 }
 
