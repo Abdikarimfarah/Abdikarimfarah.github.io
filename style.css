@@ -1,11 +1,19 @@
 header{
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     background-color: black;
     flex-direction: row;
     justify-content: space-around;
     font-size: larger;
     gap: 560px;
+}
+
+.intro{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content:space-around;
+
 }
 body{
     background-color: darkgrey;
@@ -22,19 +30,31 @@ footer{
     flex-direction: column;
     
 }
-nav img {
-    display: flex;
-    align-items: flex-start;
-    margin-right: 100px;
-    
-}
 
-#images{
+
+#image{
 display:flex;
-justify-content: center;
+justify-content:flex-start
 
 }
 
 #Languages{
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+}
+#icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#contact{
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     
 }
