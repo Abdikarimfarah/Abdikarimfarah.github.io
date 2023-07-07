@@ -17,19 +17,24 @@ article{
 }
 
 
-h1{
-    text-align: center;
-}
-h4{
-    text-align: center;
+footer{
+    display: flex;
+    flex-direction: column;
     
 }
-footer{
-    display: block;
-    grid-template-columns: 100%;
-    grid-column: ;
-}
-nav{
-    grid
+nav img {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 100px;
+    
 }
 
+#images{
+display:flex;
+justify-content: center;
+
+}
+
+#Languages{
+    
+}
