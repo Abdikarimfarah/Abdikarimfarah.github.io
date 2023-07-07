@@ -1,7 +1,32 @@
-tr{
+header{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: black;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: larger;
+}
+body{
+    background-color: darkgrey;
+    text-align: center;
+    font-size: large;
+}
+article{
     color: rgb(0, 0, 0);
 }
 
-header{
-    justify-content: center;
+
+h1{
+    text-align: center;
 }
+h4{
+    text-align: center;
+    
+}
+footer{
+    
+}
+nav{
+    grid-column: 1/2;
+}
+
