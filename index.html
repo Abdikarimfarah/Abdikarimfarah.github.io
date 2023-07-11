@@ -24,7 +24,8 @@
         <img
           src="images/empty-modern-room-with-furniture.jpg"
           alt="Image"
-          height="500" width="500"
+          height="500"
+          width="500"
         />
       </div>
       <article id="bio">
@@ -69,23 +70,26 @@
         <h3>Languages</h3>
       </section>
       <figure id="icons">
-        <img src="images/Java-Logo.png" width="80" height="60"/>
+        <img src="images/Java-Logo.png" width="80" height="60" />
 
         <img
           src="images/HTML5_logo_and_wordmark.svg.png"
-          width="60"  height="60" 
+          width="60"
+          height="60"
         />
 
         <img
           src="images/CSS3_logo_and_wordmark.svg.png"
-          width="60"  height="60" 
+          width="60"
+          height="60"
         />
 
-        <img src="images/Gradle_logo.png" width="80"  height="60" />
+        <img src="images/Gradle_logo.png" width="80" height="60" />
 
         <img
           src="images/1024px-MySQL.ff87215b43fd7292af172e2a5d9b844217262571.png"
-          width="80"  height="60" 
+          width="80"
+          height="60"
         />
       </figure>
     </div>
@@ -94,5 +98,125 @@
       <p>614-779-6635</p>
       <p>abdikarimfarah12@gmail.com</p>
     </footer>
+    <script>
+      function createDiagnosticListeners(thisElement) {
+        const listOfEventNames = [
+          "abort",
+          "afterprint",
+          "animationend",
+          "animationiteration",
+          "animationstart",
+          "beforeprint",
+          "beforeunload",
+          "blur",
+          "canplay",
+          "canplaythrough",
+          "change",
+          "click",
+          "contextmenu",
+          "copy",
+          "cut",
+          "dblclick",
+          "drag",
+          "dragend",
+          "dragenter",
+          "dragleave",
+          "dragover",
+          "dragstart",
+          "drop",
+          "durationchange",
+          "ended",
+          "error",
+          "focus",
+          "focusin",
+          "focusout",
+          "fullscreenchange",
+          "fullscreenerror",
+          "hashchange",
+          "input",
+          "invalid",
+          "keydown",
+          "keypress",
+          "keyup",
+          "load",
+          "loadeddata",
+          "loadedmetadata",
+          "loadstart",
+          "message",
+          "mousedown",
+          "mouseenter",
+          "mouseleave",
+          "mousemove",
+          "mouseover",
+          "mouseout",
+          "mouseup",
+          "mousewheel",
+          "offline",
+          "online",
+          "open",
+          "pagehide",
+          "pageshow",
+          "paste",
+          "pause",
+          "play",
+          "playing",
+          "popstate",
+          "progress",
+          "ratechange",
+          "resize",
+          "reset",
+          "scroll",
+          "search",
+          "seeked",
+          "seeking",
+          "select",
+          "show",
+          "stalled",
+          "storage",
+          "submit",
+          "suspend",
+          "timeupdate",
+          "toggle",
+          "touchcancel",
+          "touchend",
+          "touchmove",
+          "touchstart",
+          "transitionend",
+          "unload",
+          "volumechange",
+          "waiting",
+          "wheel",
+        ];
+
+        if (thisElement.id) {
+          for (const eventName of listOfEventNames) {
+            thisElement.addEventListener(eventName, (event) => {
+              console.log(
+                "Id: " +
+                  thisElement.id +
+                  "; event: " +
+                  eventName +
+                  "; value: " +
+                  event.target.value
+              );
+              event.stopPropagation();
+            });
+          }
+        }
+
+        // Recursively do the same for each child
+        for (const childElement of thisElement.children) {
+          createDiagnosticListeners(childElement);
+        }
+      }
+
+      function listenAll() {
+        createDiagnosticListeners(document.documentElement, "!", (text) => {
+          console.log(text);
+        });
+      }
+
+      listenAll();
+    </script>
   </body>
 </html>
